@@ -37,6 +37,18 @@
     .chevron{
       width: 60px;
       fill: white;
+      &:hover {
+        color: #f39c12;
+        animation: bounce 0.5s infinite;
+      }
     }
+  }
+}
+@keyframes bounce {
+  25% {
+    transform: translatey(5px);
+  }
+  75% {
+    transform: translatey(-5px);
   }
 }
