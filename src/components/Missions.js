@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import MissionSearch from './MissionSearch';
 import MissionList from './MissionList';
-import {FetchLaunchPads, FetchLaunchs} from '../api/hapi';
+import { FetchLaunchPads, FetchLaunchs } from '../api/hapi';
 import './Mission.scss';
 
 export default function Missions() {

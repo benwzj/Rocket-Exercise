@@ -1,6 +1,6 @@
 
 import { useEffect, useState, useRef } from "react";
-import { ReactComponent as Chevron } from '../down-chevron.svg';
+import { ReactComponent as Chevron } from '../../down-chevron.svg';
 import './DropDown.scss'
 
 export default function DropDown({value, options, onChange}){
@@ -53,7 +53,7 @@ export default function DropDown({value, options, onChange}){
         onClick={handleClick}
       >
         {value?.label || 'Any'}
-        <Chevron className="dropdown-chevron" />
+        {isOpen? <Chevron className="chevron-up" /> : <Chevron className="chevron" /> }
       </div>
       {isOpen && <div className="dropdown-options">{renderedOptions}</div>}
     </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import DropDown from './DropDown';
+import DropDown from './atom/DropDown';
 import './Mission.scss';
 
 export default function MissionSearch ({lPads, years, onApply}) {
@@ -10,15 +10,10 @@ export default function MissionSearch ({lPads, years, onApply}) {
 
   const lpOptions = lPads ? lPads.map(pad=>({label: pad.full_name, value: pad.id})) : [];
   lpOptions.unshift ({label: 'Any', value: 'Any'})
-  console.log(lpOptions);
-  //   [
-  //   { label: '1976', value: '1976' },
-  //   { label: '1979', value: '1979' },
-  //   { label: '1988', value: '1988' },
-  // ]
+  //console.log(lpOptions);
   const yearOptions = years ? years.map(year=>({label: year+'', value: year})) : [];
   yearOptions.unshift ({label: 'Any', value: 'Any'})
-  console.log(yearOptions); 
+  //console.log(yearOptions); 
 
   const handleKeywords = (e) =>{
     setKeywords (e.target.value);

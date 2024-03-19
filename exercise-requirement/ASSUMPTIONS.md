@@ -10,10 +10,10 @@
 
 [LIST WHAT IS STILL TO DO HERE]
 
-- The Layout is not good for mobile. 
 - the data in server is not updated.
-- Right and Bottom side left scroll bar space. need to remove them.
+- Right and Bottom side left scroll bar space. 
 - Mission list items are not work well when the viewport becoming narrow. 
+- The Layout is not good for mobile. 
 
 # Changes to the starter project
 
