@@ -3,9 +3,9 @@ import DropDown from './atom/DropDown';
 import './Mission.scss';
 
 export default function MissionSearch ({lPads, years, onApply}) {
-  const [keywords, setKeywords] = useState('');
-  const [launchPad, setLaunchPad] = useState({label: 'Any', value: 'Any'});
-  const [minYear, setMinYear] = useState({label: 'Any', value: 'Any'});
+  const [keywords, setKeywords] = useState ('');
+  const [launchPad, setLaunchPad] = useState ({label: 'Any', value: 'Any'});
+  const [minYear, setMinYear] = useState ({label: 'Any', value: 'Any'});
   const [maxYear, setMaxYear] = useState ({label: 'Any', value: 'Any'});
 
   const lpOptions = lPads ? lPads.map(pad=>({label: pad.full_name, value: pad.id})) : [];
